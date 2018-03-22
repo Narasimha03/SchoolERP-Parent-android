@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="4dp"
+    android:layout_margin="1dp"
+    android:background="#009688"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/admin_event_date_view"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="4dp"
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        android:text="21 Aug 2017" />
+
+    <TextView
+        android:id="@+id/admin_event_text_view"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:layout_marginBottom="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Event Dummy Text" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#f2f2f2"/>
+
+</LinearLayout>
+

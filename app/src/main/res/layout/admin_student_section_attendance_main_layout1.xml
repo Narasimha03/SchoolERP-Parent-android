@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/classes_layout_attendance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#e7e7e7"
+        android:padding="5dp"
+        android:orientation="horizontal">
+
+        <!--<de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image"
+            android:layout_width="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center"
+            android:layout_height="40dp"
+            android:layout_marginStart="3dp" />-->
+
+        <TextView
+            android:id="@+id/studentName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Suresh"
+            android:layout_marginLeft="10dp"
+            android:textSize="18dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/admin_student_attendance_graph_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="8dp"
+        android:layout_below="@id/classes_layout_attendance"
+        android:orientation="vertical">
+
+        <com.github.mikephil.charting.charts.HorizontalBarChart
+            android:id="@+id/student_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            />
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    card_view:cardCornerRadius="5dp"
+    card_view:contentPadding="6dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/nameTitle"
+                android:layout_width="0dp"
+                android:layout_weight="0.3"
+                android:layout_height="match_parent"
+                android:text="Subject:"
+                android:padding="5dp"
+                android:textColor="@color/colorPrimary"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="0dp"
+                android:layout_weight="0.7"
+                android:layout_height="match_parent"
+                android:text="Name"
+                android:padding="5dp"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/dateTitle"
+                android:layout_width="0dp"
+                android:layout_weight="0.3"
+                android:layout_height="match_parent"
+                android:padding="5dp"
+                android:text="Date:"
+                android:textColor="@color/colorPrimary"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="0dp"
+                android:layout_weight="0.7"
+                android:padding="5dp"
+                android:layout_height="match_parent"
+                android:text="Date"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/paperTitle"
+                android:layout_width="0dp"
+                android:layout_weight="0.3"
+                android:padding="5dp"
+                android:textColor="@color/colorPrimary"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/name"
+                android:text="Paper:"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/paper"
+                android:padding="5dp"
+                android:layout_width="0dp"
+                android:layout_weight="0.7"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/name"
+                android:text="Paper"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/marksTitle"
+                android:layout_width="0dp"
+                android:layout_weight="0.3"
+                android:padding="5dp"
+                android:textColor="@color/colorPrimary"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/date"
+                android:text="Marks:"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/marks"
+                android:layout_width="0dp"
+                android:layout_weight="0.7"
+                android:padding="5dp"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/date"
+                android:text="marks"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/start_timeTitle"
+                android:layout_width="0dp"
+                android:layout_weight="0.3"
+                android:padding="5dp"
+                android:textColor="@color/colorPrimary"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/marks"
+                android:text="Start Time:"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/start_time"
+                android:layout_width="0dp"
+                android:layout_weight="0.7"
+                android:padding="5dp"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/marks"
+                android:text="Start Time"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/end_timeTitle"
+                android:layout_width="0dp"
+                android:layout_weight="0.3"
+                android:padding="5dp"
+                android:textColor="@color/colorPrimary"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/marks"
+                android:text="End Time:"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/end_time"
+                android:layout_width="0dp"
+                android:layout_weight="0.7"
+                android:padding="5dp"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/marks"
+                android:text="End Time"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

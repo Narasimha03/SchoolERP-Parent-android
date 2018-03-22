@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#00838F</color>
+    <color name="HRcolor">#0097A7</color>
+    <color name="BookTitleColor">#0097A7</color>
+    <color name="colorPrimaryDark">#00838F</color>
+    <color name="colorAccent">#FF5252</color>
+    <color name="buttonColor">#00838F</color>
+    <color name="white">#FFFFFF</color>
+    <color name="orange_dark">#E64A19</color>
+    <color name="blue_dark">#00537F</color>
+    <color name="sms">#3C3D41</color>
+    <color name="fee_dashboard">#00C0EF</color>
+    <color name="expenses_dashboard">#00A65A</color>
+    <color name="student_dashboard">#F39C12</color>
+    <color name="teacher_dashboard">#DD4B39</color>
+    <color name="tabs_buttons">#386FB6</color>
+    <color name="text_color">#333338</color>
+    <color name="expandable_color">#222D32</color>
+    <color name="colorFAB1">#2196F3</color>
+    <color name="colorFAB2">#40e5fb</color>
+    <color name="colorTransBg">#26000000</color>
+
+    //Tab Colors
+
+    <color name="TabIndicatorColor">#ffffff</color>
+    <color name="TabSelectedTextColor">#ffffff</color>
+    <color name="TabTextColor">#c2c2c2</color>
+    <color name="TabBackground">#c800838f</color>
+
+    //Checkbox
+
+    <color name="theFillColorInCheckedState">#607D8B</color>
+    <color name="theBorderColorInUncheckedState">#252e33</color>
+    <color name="theBackgroundColorWhenFocusingTheCheckBox">#357834</color>
+
+
+    <color name="timtetableColor">#f2f2f2</color>
+
+
+
+//profile
+
+    <color name="profilebgd">#3F51B5</color>
+    <color name="profiledark">#2f333f</color>
+    <color name="profileacent">#FF4081</color>
+    <color name="bluelight"> #49acd5</color>
+    <color name="green"> #45bc62</color>
+    <color name="orange">#eaad43</color>
+    <color name="bluelight2"> #6D98BA</color>
+    <color name="green2"> #D3B99F</color>
+    <color name="orange2">#77BA99</color>
+    <color name="profiledark2">#6C596E</color>
+
+
+
+
+    //color primary-#3F51B5
+    // pri dark #2f333f
+    // color accent#FF4081
+ //  bluelight #49acd5
+ //green   #45bc62
+//   orange #eaad43
+
+
+    <!-- Screens background color-->
+    <color name="bg_screen1">#f64c73</color>
+    <color name="bg_screen2">#20d2bb</color>
+    <color name="bg_screen3">#3395ff</color>
+    <color name="bg_screen4">#c873f4</color>
+
+    <!-- dots inactive colors -->
+    <color name="dot_dark_screen1">#d1395c</color>
+    <color name="dot_dark_screen2">#14a895</color>
+    <color name="dot_dark_screen3">#2278d4</color>
+    <color name="dot_dark_screen4">#a854d4</color>
+
+    <!-- dots active colors -->
+    <color name="dot_light_screen1">#f98da5</color>
+    <color name="dot_light_screen2">#8cf9eb</color>
+    <color name="dot_light_screen3">#93c6fd</color>
+    <color name="dot_light_screen4">#e4b5fc</color>
+
+    <array name="array_dot_active">
+        <item>@color/dot_light_screen1</item>
+        <item>@color/dot_light_screen2</item>
+        <item>@color/dot_light_screen3</item>
+        <item>@color/dot_light_screen4</item>
+    </array>
+
+    <array name="array_dot_inactive">
+        <item>@color/dot_dark_screen1</item>
+        <item>@color/dot_dark_screen2</item>
+        <item>@color/dot_dark_screen3</item>
+        <item>@color/dot_dark_screen4</item>
+    </array>
+
+</resources>

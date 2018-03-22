@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.sothree.slidinguppanel.SlidingUpPanelLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sliding_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:umanoScrollableView="@id/recycler_view"
+    android:background="@android:color/darker_gray"
+    android:gravity="bottom"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+
+    app:umanoShadowHeight="4dp"
+
+    tools:umanoPanelHeight="0dp"
+    android:layout_marginBottom="40dp"
+    tools:umanoParallaxOffset="@dimen/nav_header_height">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbarStyle="outsideOverlay"
+        android:scrollbars="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                card_view:cardCornerRadius="5dp"
+                card_view:contentPadding="6dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <LinearLayout
+                        android:id="@+id/mainLayout3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:baselineAligned="false"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+
+
+
+                        <LinearLayout
+                            android:id="@+id/monthLayout"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.7"
+                            android:padding="7dp"
+                            android:layout_margin="3dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/titleConduct"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:padding="3dp"
+                                android:layout_margin="5dp"
+                                android:text="Month"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="15sp" />
+
+                            <Spinner
+                                android:id="@+id/conductSpinner"
+                                android:layout_width="match_parent"
+                                android:padding="3dp"
+                                android:layout_margin="5dp"
+                                android:layout_height="match_parent"
+                                android:backgroundTint="@android:color/black"
+                                />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="0.3"
+                            android:orientation="vertical"
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            android:layout_margin="10dp"
+                            android:layout_height="wrap_content">
+
+                            <FrameLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center">
+
+                                <android.support.design.widget.FloatingActionButton
+                                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                                    android:layout_width="50dp"
+                                    android:id="@+id/select"
+                                    android:layout_gravity="center"
+                                    android:clickable="true"
+                                    app:srcCompat="@drawable/ic_search"
+                                    android:layout_height="50dp"
+                                    app:backgroundTint="@color/colorPrimary"
+                                    tools:ignore="VectorDrawableCompat"
+                                    android:focusable="true" />
+
+                            </FrameLayout>
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+
+
+
+
+                    <!--<Button
+                        android:id="@+id/select"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_below="@+id/mainLayout3"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:background="@drawable/button_shape"
+                        android:paddingEnd="10dp"
+                        android:paddingStart="10dp"
+                        android:text="Select"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="5dp" />-->
+
+
+
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/exam_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/examTitleLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/textExamCount"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.75"
+                android:paddingBottom="10dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="10dp"
+                android:text="Students"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imgLines"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_weight="0.25"
+                android:src="@drawable/lines_white" />
+
+        </LinearLayout>
+
+        <!--<LinearLayout
+            android:layout_width="match_parent"
+            android:id="@+id/graphLinear"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+                <android.support.v7.widget.CardView
+                    android:id="@+id/stdAttGraphCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:elevation="4dp"
+                    app:cardCornerRadius="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.2"
+                            android:gravity="center"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:text="Student Graph"
+                            android:textSize="16sp" />
+
+                        <com.github.mikephil.charting.charts.PieChart
+                            android:id="@+id/stdAttGraph"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.8" />
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>-->
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+</com.sothree.slidinguppanel.SlidingUpPanelLayout>
